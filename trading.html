@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" mx-20">
+    <h1 class="text-center text-4xl">We are ready to trade</h1>
+    <section class="grid grid-cols-3 gap-10 mt-10">
+        <div class="bg-lime-700 h-[200px] rounded-lg">
+            <h1 class="text-center text-4xl text-white pt-8">Deposit</h1>
+            <p class="text-center text-2xl text-white mt-5 " >$ <span id="depositParagraph">00</span></p>
+        </div>
+        <div class="bg-blue-700 h-[200px] rounded-lg">
+            <h1 class="text-center text-4xl text-white pt-8">Total Exchange</h1>
+            <p class="text-center text-2xl text-white mt-5">$ <span id="totalParagraph">1000</span></p>
+        </div>
+        <div class="bg-purple-700 h-[200px] rounded-lg">
+            <h1 class="text-center text-4xl text-white pt-8">Withdraw</h1>
+            <p class="text-center text-2xl text-white mt-5" id="withdrawParagraph">$00</p>
+        </div>
+    </section>
+
+    <section class="mt-20 flex gap-20">
+        <div>
+        <input class="h-[43px] w-[300px] border-2 border-blue-700 rounded-lg" type="text" name="" id="depositIn" placeholder="Enter your amount">
+        <button id="deposit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 border border-blue-700 rounded">
+        Deposit
+        </button>
+        </div>
+        <div>
+        <input class="h-[43px] w-[300px] border-2 border-blue-700 rounded-lg" type="text" name="" id="withdrawIn" placeholder="Enter your amount">
+        <button id="withdraw" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 border border-blue-700 rounded">
+        Withdraw
+        </button>
+        </div>
+    </section>
+    
+    <script src="./trading.js"></script>
+</body>
+</html>
